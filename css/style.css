@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Sue+Ellen+Francisco&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width:22%;
+    margin: 8px 0;
+    border: 3px solid wheat;
+    border-radius: 50%;
+}
+
+.logo img:hover{
+    text-decoration: none;
+    border: 4px solid wheat;
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 70%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 18px;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: 600;
+}
+
+.rightNav{
+    width: 30%;
+    /* background-color: orange; */
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 2px;
+    font-size: 16px;
+    border: 2px solid wheat;
+    border-radius: 5px;
+}
+
+#search:hover{
+    text-decoration: none;
+    border: 2px solid cyan;
+    font-weight: 400;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+
+.firstHalf{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width:30%;
+}
+
+.secondHalf img{
+    width:60%;
+    padding: 10px;
+    border: 3px solid cyan;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 40px;
+}
+
+.text-small{
+    font-size: 20px;  
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 8px 5px;
+    border: 2px solid white;
+    border-radius: 2px;
+    /* font-size: 16px; */
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.btn:hover{
+    text-decoration: none;
+    border: 3px solid cyan;
+    font-weight: 400;
+}
+
+.btn-sm{
+    padding: 5px 8px;
+    vertical-align: center;
+    border: 1px solid cyan;
+    font-size: 16px;
+}
+
+.btn-sm:hover{
+    text-decoration: none;
+    border: 2px solid cyan;
+    font-weight: 400;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-dark:hover{
+    text-decoration: none;
+    border: 3px solid darkgray;
+    font-weight: 400;
+}
+
+.section{
+    /* height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Sue Ellen Francisco', cursive;
+    padding: 10px;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0 65px;
+}
+
+.sectionTag{
+    padding: 16px 0;
+
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 70%;
+    border: 3px solid cyan;
+    border-radius: 3px;
+    margin: 10%;
+    padding: 15%;
+    background-color: antiquewhite;
+}
+
+/* .thumbnail img{
+    width: 300px;
+    border: 3px solid cyan;
+    border-radius: 3px;
+    margin: 20px;
+    padding: 50px;
+    background-color: antiquewhite;
+} */
+
+.contact{
+    background-color: rgb(217, 214, 207);
+    height: 700px;
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+.form{
+    max-width: 60%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 12px 0;
+    padding: 5px 12px;
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid darkgray;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 25px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    color:wheat;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 43px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
